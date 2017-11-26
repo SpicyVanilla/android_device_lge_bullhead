@@ -108,6 +108,9 @@ on boot
     write /dev/cpuset/system-background/cpus 0-2
     write /dev/cpuset/top-app/cpus 0-5
 
+    # Default GPU governor
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor performance
+
     # Bluetooth
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
