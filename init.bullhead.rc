@@ -111,6 +111,9 @@ on boot
     # Default GPU governor
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor simple_ondemand
 
+    # Default min GPU frequency
+    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 300000000
+
     # Bluetooth
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
