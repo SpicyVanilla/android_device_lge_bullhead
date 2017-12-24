@@ -111,6 +111,9 @@ on boot
     # Default GPU governor
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor performance
 
+    # Default vibrator strength
+    write /sys/class/timed_output/vibrator/vmax_mv_strong 708
+
     # Bluetooth
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
