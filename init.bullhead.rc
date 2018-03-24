@@ -112,7 +112,7 @@ on boot
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor performance
 
     # Default vibrator strength
-    write /sys/class/timed_output/vibrator/vmax_mv_strong 708
+    write /sys/class/timed_output/vibrator/vmax_mv_strong 828
 
     # Bluetooth
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
